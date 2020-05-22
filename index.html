@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modelo Parcial</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="logica.js"></script>
+</head>
+
+<body>
+
+    <div class="loading" id="loading">
+        <img src="loading.gif" width="512" height="512">
+    </div>
+
+    <div id="contenedor">
+        <div id="contenedorModificar" class="contenedor" hidden>
+            <button id="btnCerrar" class="cerrar">x</button>
+            <br>
+            <br>
+            <label for="name">Nombre</label>
+            <br>
+            <input type="text" id="name" class="sinError" name="firstname" placeholder="Nombre...">
+            <br>
+            <label for="fecha">Fecha</label>
+            <br>
+            <input type="date" id="fechaFinal" class="sinError" name="fechaFinal" placeholder="Fecha...">
+            <br>
+            <select name="cuatrimestre" id="cuatrimestre">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br>
+            <label>Turno</label>
+            <br>
+            <div>
+                <input type="radio" id="manana" name="turno">
+                <label for="manana">Mañana</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" id="noche" name="turno">
+                <label for="noche">Noche</label>
+            </div>
+            <br>
+            <div class="buttons">
+                <input type="button" value="Eliminar" class="eliminar" id="btnEliminar">
+                <input type="button" value="Modificar" class="modificar" id="btnModificar">
+            </div>
+        </div>
+
+        <h2>Lista de Materias</h2>
+    
+        <table id ="tabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cuatrimestre</th>
+                    <th>Fecha Final</th>
+                    <th>Turno</th>
+                </tr>
+            </thead>
+            <tbody id="tCuerpo">
+                
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
